@@ -219,12 +219,14 @@ footer{
         font-size:1.2rem;
     }
 
-   
+   ul a{
+       display: flex;
+   }
 
     nav ul li a{
         display:block;
         background:#232b3f;
-        padding:10px;
+        padding:3px;
         border-radius:8px;
     }
 
