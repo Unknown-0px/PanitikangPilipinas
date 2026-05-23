@@ -55,7 +55,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color:#18026a;
+    color:#6e088d;
+    border: 1px solid #40058d;
+    padding: 5px 10px;
 }
 
 /* HERO */
