@@ -160,6 +160,8 @@ nav ul li a:hover{
 
 .gallery img:hover{
     transform:scale(1.03);
+    border: 1px solid #40058d;
+    padding: 3px;
 }
 
 /* VIDEO */
