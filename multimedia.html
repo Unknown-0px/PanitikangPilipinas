@@ -5,27 +5,6 @@
     <title>Multimedia</title>
      <link rel="icon" type="icon" href="icon.jpg">
     <link rel="stylesheet" href="style.css">
-    <style>
-         .image-container{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .zoom-image{
-        width: 210px;
-        border-radius: 20px;
-
-        transition: transform 0.4s ease;
-
-        transform: scale(1);
-    }
-
-    /* Active Zoom */
-    .zoom-image.active{
-        transform: scale(1.5);
-    }
-    </style>
 </head>
 <body>
 
@@ -50,9 +29,9 @@
 <h1>Gallery</h1>
 
 <div class="gallery">
-   <a href="literary.html#adarna"><img src="ibon.jpg" alt="Ibong Adarna" class="zoom-image" id="zoomImage"></a>
-   <a href="literary.html#florante"><img src="florante.jpg" alt="Florante at Laura" class="zoom-image" id="zoomImage"></a>
-   <a href="literary.html#pinya"><img src="pinya.jpg" alt="Pinya" class="zoom-image" id="zoomImage"></a>
+   <a href="literary.html#adarna"><img src="ibon.jpg" alt="Ibong Adarna"></a>
+   <a href="literary.html#florante"><img src="florante.jpg" alt="Florante at Laura"></a>
+   <a href="literary.html#pinya"><img src="pinya.jpg" alt="Pinya"></a>
 </div>
 
 <br><br>
@@ -65,22 +44,6 @@
 
 </div>
 
-    <script>
-    const image = document.getElementById("zoomImage");
-
-    window.addEventListener("scroll", () => {
-
-        const rect = image.getBoundingClientRect();
-
-        const screenCenter = window.innerHeight / 2;
-
-        if(rect.top < screenCenter && rect.bottom > screenCenter){
-            image.classList.add("active");
-        } else {
-            image.classList.remove("active");
-        }
-    });
-</script>
 
 </body>
 </html>
